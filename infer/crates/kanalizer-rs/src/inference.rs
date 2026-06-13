@@ -90,7 +90,8 @@ pub struct StrategyTopP {
     feature = "getrandom_on_wasm32_unknown"
 ))]
 fn generate_random<T: num_traits::ToBytes>(_data: &[T]) -> usize {
-    use rand::Rng;
+    use rand::RngExt;
+
     let mut rng = rand::rng();
     rng.random::<f64>()
         .to_bits()

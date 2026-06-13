@@ -40,7 +40,7 @@ pub(crate) fn split_ndarray<T, D: ndarray::Dimension>(
     array: &ndarray::Array<T, D>,
     n: usize,
     axis: ndarray::Axis,
-) -> Vec<ndarray::ArrayView<T, D>> {
+) -> Vec<ndarray::ArrayView<'_, T, D>> {
     if array.shape()[axis.index()] % n != 0 {
         panic!("Cannot split the array evenly");
     }
