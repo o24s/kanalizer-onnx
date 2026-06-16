@@ -4,6 +4,8 @@
 
 [VOICEVOX/kanalizer](https://github.com/VOICEVOX/kanalizer) のフォークです。
 
+`ort` を使った推論コードの例は、[ここ](https://github.com/o24s/haqumei/tree/main/haqumei-kanalizer) にあります。
+
 関連Issue：[VOICEVOX/voicevox_project#65](https://github.com/VOICEVOX/voicevox_project/issues/65)
 
 ## リポジトリ構造
